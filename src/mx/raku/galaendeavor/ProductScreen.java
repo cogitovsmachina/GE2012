@@ -18,23 +18,23 @@ public class ProductScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pager);
 
-		ComplexAdapter adapter = new ComplexAdapter();
+		ComplexPagerViewAdapter adapter = new ComplexPagerViewAdapter();
 		ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 		viewPager.setAdapter(adapter);
 		viewPager.setCurrentItem(0);
 
-//		GridView gridView = (GridView) findViewById(R.id.gridview);
-//		gridView.setAdapter(new ImageAdapter(this));
-//
-//		gridView.setOnItemClickListener(new OnItemClickListener() {
-//			public void onItemClick(AdapterView<?> parent, View view,
-//					int position, long id) {
-//				Toast.makeText(getApplicationContext(), "" + position,
-//						Toast.LENGTH_SHORT).show();
-//
-//			}
-//		});
-//
+		GridView gridView = (GridView) findViewById(R.id.gridview);
+		gridView.setAdapter(new ImageAdapter(this));
+
+		gridView.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Toast.makeText(getApplicationContext(), "" + position,
+						Toast.LENGTH_SHORT).show();
+
+			}
+		});
+
 	}
 
 	@Override
