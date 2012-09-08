@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Image" id="2" x="-16" y="-16" measuredWidth="1280" measuredHeight="800" src="mockups/splash.png"/>
+  <widgets xsi:type="model:Hotspot" id="3" x="393" y="209" width="408" height="280" measuredWidth="408" measuredHeight="280" link="ProductGallery0.screen"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
