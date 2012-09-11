@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mx.raku.galaendeavor.R;
-import mx.raku.galaendeavor.R.id;
-import mx.raku.galaendeavor.R.layout;
-import mx.raku.galaendeavor.R.menu;
 import mx.raku.galaendeavor.adapter.ComplexPagerViewAdapter;
 import mx.raku.galaendeavor.fragments.FirstProductScreen;
 import mx.raku.galaendeavor.fragments.SecondProductScreen;

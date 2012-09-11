@@ -4,8 +4,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import mx.raku.galaendeavor.R;
-import mx.raku.galaendeavor.R.layout;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

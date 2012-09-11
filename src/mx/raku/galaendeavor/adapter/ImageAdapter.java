@@ -1,7 +1,6 @@
 package mx.raku.galaendeavor.adapter;
 
 import mx.raku.galaendeavor.R;
-import mx.raku.galaendeavor.R.drawable;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
 	private Context mContext;
 
-	
 	public ImageAdapter(Context context) {
 		mContext = context;
 	}
@@ -39,24 +37,21 @@ public class ImageAdapter extends BaseAdapter {
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ImageView imageView;
-		if(convertView == null){
+		if (convertView == null) {
 			imageView = new ImageView(mContext);
-			imageView.setLayoutParams(new GridView.LayoutParams(85,85));
+			imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
 			imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			imageView.setPadding(8, 8, 8, 8);
-		}
-		else{
+		} else {
 			imageView = (ImageView) convertView;
 		}
-			imageView.setImageResource(mThumbId[position]);
-			
+		imageView.setImageResource(mThumbId[position]);
+
 		return null;
 	}
-	
+
 	// references to our images
-    private Integer[] mThumbId = {
-            R.drawable.logo_gala_endeavor_low,
-    };
+	private Integer[] mThumbId = { R.drawable.logo_gala_endeavor_low, };
 
 	public int getViewTypeCount() {
 		// TODO Auto-generated method stub
