@@ -1,13 +1,17 @@
 package mx.raku.galaendeavor.fragments;
 
 import mx.raku.galaendeavor.R;
+import mx.raku.galaendeavor.adapter.ImageAdapter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 
 public class FirstProductScreen extends Fragment {
+	GridView gridView;
+
 	public static FirstProductScreen newInstance(String title) {
 		FirstProductScreen first = new FirstProductScreen();
 		Bundle bundle = new Bundle();
@@ -17,10 +21,21 @@ public class FirstProductScreen extends Fragment {
 	}
 
 	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+	}
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.first_product_fragment, container,
-				false);
+
+		View myFragmentView = inflater.inflate(R.layout.first_product_fragment,
+				container, false);
+		gridView = (GridView) myFragmentView.findViewById(R.id.gridview);
+		gridView.setAdapter(new ImageAdapter(getActivity()));
+
+		return myFragmentView;
 	}
 
 }

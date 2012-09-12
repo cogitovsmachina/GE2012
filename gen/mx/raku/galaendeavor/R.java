@@ -16,12 +16,12 @@ public final class R {
         public static final int logo_gala_endeavor_low=0x7f020002;
     }
     public static final class id {
-        public static final int imageButton1=0x7f070000;
+        public static final int gridview=0x7f070000;
+        public static final int imageButton1=0x7f070002;
         public static final int menu_settings=0x7f070005;
-        public static final int textview=0x7f070001;
         public static final int textview1=0x7f070003;
         public static final int textview2=0x7f070004;
-        public static final int view_pager=0x7f070002;
+        public static final int view_pager=0x7f070001;
     }
     public static final class layout {
         public static final int first_product_fragment=0x7f030000;

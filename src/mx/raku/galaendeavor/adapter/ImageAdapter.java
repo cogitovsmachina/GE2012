@@ -2,7 +2,6 @@ package mx.raku.galaendeavor.adapter;
 
 import mx.raku.galaendeavor.R;
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -21,17 +20,10 @@ public class ImageAdapter extends BaseAdapter {
 	}
 
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public long getItemId(int position) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int getItemViewType(int position) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -47,45 +39,15 @@ public class ImageAdapter extends BaseAdapter {
 		}
 		imageView.setImageResource(mThumbId[position]);
 
-		return null;
+		return imageView;
 	}
 
 	// references to our images
-	private Integer[] mThumbId = { R.drawable.logo_gala_endeavor_low, };
-
-	public int getViewTypeCount() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public boolean hasStableIds() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public void registerDataSetObserver(DataSetObserver observer) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void unregisterDataSetObserver(DataSetObserver observer) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public boolean areAllItemsEnabled() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean isEnabled(int position) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	private Integer[] mThumbId = { R.drawable.logo_gala_endeavor_low,
+			R.drawable.logo_gala_endeavor_low,
+			R.drawable.logo_gala_endeavor_low,
+			R.drawable.logo_gala_endeavor_low,
+			R.drawable.logo_gala_endeavor_low,
+			R.drawable.logo_gala_endeavor_low, };
 
 }

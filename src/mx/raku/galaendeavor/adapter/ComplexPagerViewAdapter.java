@@ -4,9 +4,9 @@ import java.util.List;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
-public class ComplexPagerViewAdapter extends FragmentPagerAdapter {
+public class ComplexPagerViewAdapter extends FragmentStatePagerAdapter {
 
 	private List<Fragment> fragments;
 
