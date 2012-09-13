@@ -39,12 +39,12 @@ public class FirstProductScreen extends Fragment {
 		gridView.setAdapter(new ImageAdapter(getActivity()));
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 
-			public void onItemClick(AdapterView<?> parent, View view, int position,
-					long id) {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
 				Intent intent = new Intent(getActivity(), ProductDetail.class);
-				startActivity(intent);				
+				startActivity(intent);
 			}
-			
+
 		});
 
 		return myFragmentView;
