@@ -24,6 +24,10 @@
             android:name=".ui.ProductScreen"
             android:label="@string/product_screen"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.ProductDetail"
+            android:label="@string/product_screen"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

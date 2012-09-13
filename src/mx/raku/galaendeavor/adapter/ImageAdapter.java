@@ -49,5 +49,6 @@ public class ImageAdapter extends BaseAdapter {
 			R.drawable.logo_gala_endeavor_low,
 			R.drawable.logo_gala_endeavor_low,
 			R.drawable.logo_gala_endeavor_low, };
+	
 
 }
